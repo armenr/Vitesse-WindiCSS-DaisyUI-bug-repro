@@ -1,3 +1,18 @@
+# BUG REPRO REPO
+(see commit history for reproduction steps - they're very simple)
+
+### What's different from the Vitesse boilerplate/what's changed?
+- Add DaisyUI
+- Configure WindiCSS for DaisyUI
+- Add simple plugin for safe-area utilities
+- Add simple test page
+
+### Observe WORKING implementation (without using `prefix` in windi.config.ts)
+- `pnpm dev`
+
+### Observe BUG (triggered by `prefix` config key in windi.config.ts)
+- Go to window.config.ts --> uncomment ANY of the included prefix options (lines 11 - 13)
+
 <p align='center'>
   <img src='https://user-images.githubusercontent.com/11247099/111864893-a457fd00-899e-11eb-9f05-f4b88987541d.png' alt='Vitesse - Opinionated Vite Starter Template' width='600'/>
 </p>
