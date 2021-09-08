@@ -9,9 +9,21 @@
 
 ### Observe WORKING implementation (without using `prefix` in windi.config.ts)
 - `pnpm dev`
+- navigate to http://localhost:3333/test
+- Enjoy the beautiful layout! 😍
+
+![Screen Shot 2021-09-08 at 1 47 36 PM](https://user-images.githubusercontent.com/7662191/132583249-03af0f42-531f-41a5-ae5a-8bb00202a49e.png)
 
 ### Observe BUG (triggered by `prefix` config key in windi.config.ts)
 - Go to window.config.ts --> uncomment ANY of the included prefix options (lines 11 - 13)
+- `pnpm dev`
+- navigate to http://localhost:3333/test
+- All hell has broken loose 😱
+
+![Screen Shot 2021-09-08 at 1 48 21 PM](https://user-images.githubusercontent.com/7662191/132583367-48a0c526-2a1a-4ad4-9d71-e6c958c3aad7.png)
+
+
+
 
 <p align='center'>
   <img src='https://user-images.githubusercontent.com/11247099/111864893-a457fd00-899e-11eb-9f05-f4b88987541d.png' alt='Vitesse - Opinionated Vite Starter Template' width='600'/>
