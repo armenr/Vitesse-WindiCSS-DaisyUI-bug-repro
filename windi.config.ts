@@ -1,6 +1,7 @@
 import { defineConfig, transform } from 'windicss/helpers'
 import colors from 'windicss/colors'
 import typography from 'windicss/plugin/typography'
+import plugin from 'windicss/plugin'
 
 export default defineConfig({
   darkMode: 'class',
@@ -10,6 +11,38 @@ export default defineConfig({
   plugins: [
     typography(),
     require('windicss/plugin/forms'),
+    // make things reasonably friendly for mobile clients
+    // ...especially iPhones - THANKS APPLE!
+    plugin(({ addUtilities }) => {
+      const newUtilities = {
+        '.safe-top-const': {
+          paddingTop: 'constant(safe-area-inset-top)',
+        },
+        '.safe-top-env': {
+          paddingTop: 'env(safe-area-inset-top)',
+        },
+        '.safe-left-const': {
+          paddingLeft: 'constant(safe-area-inset-left)',
+        },
+        '.safe-left-env': {
+          paddingLeft: 'env(safe-area-inset-left)',
+        },
+        '.safe-right-const': {
+          paddingRight: 'constant(safe-area-inset-right)',
+        },
+        '.safe-right-env': {
+          paddingRight: 'env(safe-area-inset-right)',
+        },
+        '.safe-bottom-const': {
+          paddingBottom: 'constant(safe-area-inset-bottom)',
+        },
+        '.safe-bottom-env': {
+          paddingBottom: 'env(safe-area-inset-bottom)',
+        },
+      }
+      addUtilities(newUtilities)
+    }),
+    // LET DAISY DO ITS THING!
     transform('daisyui'),
   ],
   theme: {
