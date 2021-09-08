@@ -13,6 +13,7 @@ specifiers:
   '@vueuse/head': ^0.6.0
   critters: ^0.0.10
   cross-env: ^7.0.3
+  daisyui: ^1.14.0
   eslint: ^7.32.0
   https-localhost: ^4.6.5
   markdown-it-link-attributes: ^3.0.0
@@ -41,6 +42,7 @@ specifiers:
 dependencies:
   '@vueuse/core': 6.2.1_vue@3.2.9
   '@vueuse/head': 0.6.0_vue@3.2.9
+  daisyui: 1.14.0
   nprogress: 0.2.0
   pinia: 2.0.0-rc.8_typescript@4.4.2+vue@3.2.9
   prism-theme-vars: 0.2.2
@@ -2557,6 +2559,10 @@ packages:
 
   /csstype/2.6.17:
     resolution: {integrity: sha512-u1wmTI1jJGzCJzWndZo8mk4wnPTZd1eOIYTYvuEyOQGfmDl3TrabCCfKnOC86FZwW/9djqTl933UF/cS425i9A==}
+
+  /daisyui/1.14.0:
+    resolution: {integrity: sha512-50ccXdJMi0TS7raItKfUOJppPRvluOUCO4m6i7QPOVOdDZVP6awjqUoGmLzqFepO6b6QpVotswDvaXIKSZ/2aw==}
+    dev: false
 
   /data-urls/2.0.0:
     resolution: {integrity: sha512-X5eWTSXO/BJmpdIKCRuKUgSCgAN0OwliVK3yPKbwIWU1Tdw5BRajxlzMidvh+gwko9AfQ9zIj52pzF91Q3YAvQ==}

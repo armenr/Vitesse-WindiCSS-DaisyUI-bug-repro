@@ -1,4 +1,4 @@
-import { defineConfig } from 'windicss/helpers'
+import { defineConfig, transform } from 'windicss/helpers'
 import colors from 'windicss/colors'
 import typography from 'windicss/plugin/typography'
 
@@ -9,6 +9,7 @@ export default defineConfig({
 
   plugins: [
     typography(),
+    transform('daisyui'),
   ],
   theme: {
     extend: {
