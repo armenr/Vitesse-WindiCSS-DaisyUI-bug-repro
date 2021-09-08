@@ -7,6 +7,10 @@ export default defineConfig({
   darkMode: 'class',
   // https://windicss.org/posts/v30.html#attributify-mode
   attributify: true,
+  // !!NOTE: Try any of these prefixes...they all break!
+  // prefix: 'windi',
+  // prefix: 'windi-',
+  // prefix: 'w:',
 
   plugins: [
     typography(),
